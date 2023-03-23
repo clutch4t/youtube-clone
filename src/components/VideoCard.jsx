@@ -14,7 +14,7 @@ const VideoCard = ({ video: { id: { videoId }, snippet } }) => {
                     <Typography variant="subtitle1" fontWeight="bold" color="#FFF">{parseInt(snippet?.title.length) > 60 ? snippet?.title.slice(0, 60) + "..." : snippet?.title}</Typography>
                 </Link>
                 <Link to={`/channel/${snippet?.channelId}`}>
-                    <Typography variant="subtitle2" fontWeight="bold" color="gray">
+                    <Typography variant="subtitle2" fontWeight="bold" color="gray" alignItems="center">
                         {snippet?.channelTitle.slice(0, 60)}
                         <CheckCircle sx={{ fontSize: 12, color: 'gray', ml: '5px' }} />
                     </Typography>
